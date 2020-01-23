@@ -9,3 +9,6 @@ RK_USE_COMPRESSED_KERNEL = "1"
 KBUILD_DEFCONFIG = "rk3308_linux_defconfig"
 
 RK_LOADER_BACKUP_NUM = "2"
+
+# Avoid parsing error in wayland recipe
+RK_MALI_LIB ?= ""
